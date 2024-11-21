@@ -55,22 +55,4 @@ resource "aws_security_group" "allow_cache" {
     ipv6_cidr_blocks = ["::/0"]
   }
 
-  #   egress {
-  #     description = "from the NAT instance to the cache port (11211)."
-  #     from_port        = 11211
-  #     to_port          = 11211
-  #     protocol         = "tcp"
-  #     cidr_blocks      = ["0.0.0.0/0"]
-  #     ipv6_cidr_blocks = ["::/0"]
-  #   }
-
-
-  #   egress {
-  #     description = "from the NAT instance to the cache port (6379)."
-  #     from_port        = 6379
-  #     to_port          = 6379
-  #     protocol         = "tcp"
-  #     cidr_blocks      = ["0.0.0.0/0"]
-  #     ipv6_cidr_blocks = ["::/0"]
-  #   }
 }
